@@ -8,11 +8,32 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "GameScript",
+"language": "GDScript",
+"path": "res://ScriptingEngine/script.gd"
+}, {
+"base": "TextureRect",
+"class": "GameSprite",
+"language": "GDScript",
+"path": "res://GameEngine/sprite.gd"
+} ]
+_global_script_class_icons={
+"GameScript": "",
+"GameSprite": ""
+}
+
 [application]
 
 config/name="Test"
 run/main_scene="res://Control.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Compiler="*res://ScriptingEngine/compiler.gd"
+CompilerGlobals="*res://ScriptingEngine/globals.gd"
 
 [physics]
 
