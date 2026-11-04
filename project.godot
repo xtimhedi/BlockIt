@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "TextEdit",
+"class": "CodeEdit",
+"language": "GDScript",
+"path": "res://Editor/GDScriptSyntaxHighlighter.gd"
+}, {
 "base": "Node",
 "class": "GameScript",
 "language": "GDScript",
@@ -20,6 +25,7 @@ _global_script_classes=[ {
 "path": "res://GameEngine/sprite.gd"
 } ]
 _global_script_class_icons={
+"CodeEdit": "",
 "GameScript": "",
 "GameSprite": ""
 }
